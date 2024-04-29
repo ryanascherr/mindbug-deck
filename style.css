@@ -1,0 +1,31 @@
+.deck-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+
+.card {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.img-holder {
+    position: relative;
+}
+
+.card-number {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
