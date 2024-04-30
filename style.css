@@ -30,6 +30,25 @@
     font-family: sans-serif;
 }
 
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat-set {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 10px;
+    /* width: 45%; */
+}
+
+.stat-set > div {
+    margin: 5px;
+}
+
 @media only screen and (max-width: 1200px){
     .deck-holder {
         grid-template-columns: 1fr 1fr 1fr 1fr;

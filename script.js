@@ -2727,12 +2727,21 @@ const creatures = [
 let url;
 let listOfCardNumbers;
 let listOfCardLetters = [];
+let numberOfFirstContact = 0;
+let numberOfNewServants = 0;
+let numberOfEvolution = 0;
+let numberOfEternity = 0;
+let numberOfPromo = 0;
 let numberOfFrenzy = 0;
 let numberOfHunter = 0;
 let numberOfPoisonous = 0;
 let numberOfSneaky = 0;
 let numberOfTough = 0;
 let numberOfCards = 0;
+let numberOfPlay = 0;
+let numberOfAttack = 0;
+let numberOfDefeated = 0;
+let numberOfDiscard = 0;
 
 function getURL() {
     url = window.location.href;
@@ -2756,8 +2765,6 @@ function placeCards() {
         let currentCardNumber = parseInt(this);
         $(creatures).each(function( index ) {
             if (currentCardNumber == index) {
-                numberOfCards++;
-                getStats(currentCardNumber);
                 let name = this.name;
                 name = name.split(" ");
                 let imageName;
@@ -2773,7 +2780,11 @@ function placeCards() {
                     cardNumber = 1;
                 } else {
                     cardNumber = 2;
+                    getStats(currentCardNumber);
+                    numberOfCards++;
                 }
+                numberOfCards++;
+                getStats(currentCardNumber);
                 $(".deck-holder").append(`<div class="img-holder">
                                             <img class="card" src="./img/${imageName}.jpg">
                                             <div class="card-number">${cardNumber}</div>
@@ -2786,6 +2797,22 @@ function placeCards() {
 
 function getStats(currentCardNumber) {
     let creatureObject = creatures[currentCardNumber];
+    if (creatureObject.pack == "First Contact") {
+        numberOfFirstContact++;
+    }
+    if (creatureObject.pack == "First Contact: Add-On") {
+        numberOfNewServants++;
+    }
+    if (creatureObject.pack == "Beyond Evolution") {
+        numberOfEvolution++;
+    }
+    if (creatureObject.pack == "Beyond Eternity") {
+        numberOfEternity++;
+    }
+    if (creatureObject.pack == "Promo") {
+        numberOfPromo++;
+    }
+
     if (creatureObject.keywords.frenzy) {
         numberOfFrenzy++;
     }
@@ -2801,9 +2828,25 @@ function getStats(currentCardNumber) {
     if (creatureObject.keywords.tough) {
         numberOfTough++;
     }
+
+    if (creatureObject.triggers.play) {
+        numberOfPlay++;
+    }
+    if (creatureObject.triggers.attack) {
+        numberOfAttack++;
+    }
+    if (creatureObject.triggers.defeated) {
+        numberOfDefeated++;
+    }
+    if (creatureObject.triggers.discard) {
+        numberOfDiscard++;
+    }
 }
 
 function displayStats() {
+
+    $(".total-cards").text("Number of cards: " + numberOfCards);
+
     let frenzyPercent = ((numberOfFrenzy/numberOfCards)*100).toFixed(1);
     let hunterPercent = ((numberOfHunter/numberOfCards)*100).toFixed(1);
     let poisonousPercent = ((numberOfPoisonous/numberOfCards)*100).toFixed(1);
@@ -2814,6 +2857,32 @@ function displayStats() {
     $('.poisonous-num').text("Poisonous: " + numberOfPoisonous + ` (${poisonousPercent}%)`);
     $('.sneaky-num').text("Sneaky: " + numberOfSneaky + ` (${sneakyPercent}%)`);
     $('.tough-num').text("Tough: " + numberOfTough + ` (${toughPercent}%)`);
+    let numberOfNoKeywords = numberOfCards - numberOfFrenzy - numberOfHunter - numberOfPoisonous - numberOfSneaky - numberOfTough;
+    let percentOfNoKeywords = ((numberOfNoKeywords/numberOfCards)*100).toFixed(1);
+    $('.keyword-none').text(`None: ${numberOfNoKeywords} (${percentOfNoKeywords}%)`);
+
+    let firstContactPercent = ((numberOfFirstContact/numberOfCards)*100).toFixed(1);
+    let newServantsPercent = ((numberOfNewServants/numberOfCards)*100).toFixed(1);
+    let evolutionPercent = ((numberOfEvolution/numberOfCards)*100).toFixed(1);
+    let eternityPercent = ((numberOfEternity/numberOfCards)*100).toFixed(1);
+    let promoPercent = ((numberOfPromo/numberOfCards)*100).toFixed(1);
+    $('.fc-num').text("First Contact: " + numberOfFirstContact + ` (${firstContactPercent}%)`);
+    $('.ns-num').text("New Servants: " + numberOfNewServants + ` (${newServantsPercent}%)`);
+    $('.ev-num').text("Beyond Evolution: " + numberOfEvolution + ` (${evolutionPercent}%)`);
+    $('.et-num').text("Beyond Eternity: " + numberOfEternity + ` (${eternityPercent}%)`);
+    $('.promo-num').text("Promo: " + numberOfPromo + ` (${promoPercent}%)`);
+
+    let playPercent = ((numberOfPlay/numberOfCards)*100).toFixed(1);
+    let attackPercent = ((numberOfAttack/numberOfCards)*100).toFixed(1);
+    let defeatedPercent = ((numberOfDefeated/numberOfCards)*100).toFixed(1);
+    let discardPercent = ((numberOfDiscard/numberOfCards)*100).toFixed(1);
+    $('.play-num').text("Play: " + numberOfPlay + ` (${playPercent}%)`);
+    $('.attack-num').text("Attack: " + numberOfAttack + ` (${attackPercent}%)`);
+    $('.defeated-num').text("Defeated: " + numberOfDefeated + ` (${defeatedPercent}%)`);
+    $('.discard-num').text("In Discard Pile: " + numberOfDiscard + ` (${discardPercent}%)`);
+    let numberOfNoTriggers = numberOfCards - numberOfPlay - numberOfAttack - numberOfDefeated - numberOfDiscard;
+    let percentOfNoTriggers = ((numberOfNoTriggers/numberOfCards)*100).toFixed(1);
+    $('.trigger-none').text(`None: ${numberOfNoTriggers} (${percentOfNoTriggers}%)`);
 }
 
 initialize();
