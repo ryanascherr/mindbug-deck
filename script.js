@@ -2727,10 +2727,15 @@ const creatures = [
 let url;
 let listOfCardNumbers;
 let listOfCardLetters = [];
+let numberOfFrenzy = 0;
+let numberOfHunter = 0;
+let numberOfPoisonous = 0;
+let numberOfSneaky = 0;
+let numberOfTough = 0;
+let numberOfCards = 0;
 
 function getURL() {
     url = window.location.href;
-    console.log(url);
 
     if (!url.includes("?")) return;
     url = url.split("?");
@@ -2746,12 +2751,13 @@ function getURL() {
 }
 
 function placeCards() {
-    console.log(listOfCardLetters);
     let indexOfArray = 0;
     $(listOfCardNumbers).each(function( index ) {
         let currentCardNumber = parseInt(this);
         $(creatures).each(function( index ) {
             if (currentCardNumber == index) {
+                numberOfCards++;
+                getStats(currentCardNumber);
                 let name = this.name;
                 name = name.split(" ");
                 let imageName;
@@ -2763,14 +2769,11 @@ function placeCards() {
                     }
                 }
                 let cardNumber;
-                console.log(indexOfArray);
-                console.log(listOfCardLetters[indexOfArray]);
                 if (listOfCardLetters[indexOfArray] == "a") {
                     cardNumber = 1;
                 } else {
                     cardNumber = 2;
                 }
-                console.log(cardNumber);
                 $(".deck-holder").append(`<div class="img-holder">
                                             <img class="card" src="./img/${imageName}.jpg">
                                             <div class="card-number">${cardNumber}</div>
@@ -2781,8 +2784,41 @@ function placeCards() {
     });
 }
 
+function getStats(currentCardNumber) {
+    let creatureObject = creatures[currentCardNumber];
+    if (creatureObject.keywords.frenzy) {
+        numberOfFrenzy++;
+    }
+    if (creatureObject.keywords.hunter) {
+        numberOfHunter++;
+    }
+    if (creatureObject.keywords.poisonous) {
+        numberOfPoisonous++;
+    }
+    if (creatureObject.keywords.sneaky) {
+        numberOfSneaky++;
+    }
+    if (creatureObject.keywords.tough) {
+        numberOfTough++;
+    }
+}
+
+function displayStats() {
+    let frenzyPercent = ((numberOfFrenzy/numberOfCards)*100).toFixed(1);
+    let hunterPercent = ((numberOfHunter/numberOfCards)*100).toFixed(1);
+    let poisonousPercent = ((numberOfPoisonous/numberOfCards)*100).toFixed(1);
+    let sneakyPercent = ((numberOfSneaky/numberOfCards)*100).toFixed(1);
+    let toughPercent = ((numberOfTough/numberOfCards)*100).toFixed(1);
+    $('.frenzy-num').text("Frenzy: " + numberOfFrenzy + ` (${frenzyPercent}%)`);
+    $('.hunter-num').text("Hunter: " + numberOfHunter + ` (${hunterPercent}%)`);
+    $('.poisonous-num').text("Poisonous: " + numberOfPoisonous + ` (${poisonousPercent}%)`);
+    $('.sneaky-num').text("Sneaky: " + numberOfSneaky + ` (${sneakyPercent}%)`);
+    $('.tough-num').text("Tough: " + numberOfTough + ` (${toughPercent}%)`);
+}
+
 initialize();
 function initialize() {
     getURL();
     placeCards();
+    displayStats();
 }

@@ -29,3 +29,27 @@
     font-weight: bold;
     font-family: sans-serif;
 }
+
+@media only screen and (max-width: 1200px){
+    .deck-holder {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .deck-holder {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .deck-holder {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
