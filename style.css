@@ -1,3 +1,24 @@
+body {
+    margin: 0;
+    color: #411928;
+    font-family: sans-serif;
+    min-height: 1500px;
+    background-color: lightgray;
+    font: 16px Arial;
+    padding: 30px;
+}
+
+h1 {
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.total-number-div {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .deck-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -5,7 +26,7 @@
     justify-content: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 0;
     position: relative;
 }
 
@@ -32,7 +53,7 @@
 
 .stats {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
 }
@@ -42,11 +63,19 @@
     flex-direction: column;
     border: 2px solid black;
     margin: 10px;
-    /* width: 45%; */
+    /* width: 30%; */
+    align-self: stretch;
+    padding: 15px;
+    flex-grow: 1;
 }
 
 .stat-set > div {
-    margin: 5px;
+    margin: 5px 0;
+}
+
+.stat-set h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1200px){
@@ -64,6 +93,9 @@
 @media only screen and (max-width: 700px){
     .deck-holder {
         grid-template-columns: 1fr 1fr;
+    }
+    .card {
+        border-radius: 10px;
     }
 }
 
