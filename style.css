@@ -78,6 +78,10 @@ h1 {
     margin-bottom: 10px;
 }
 
+.power-distribution {
+    align-items: center;
+}
+
 @media only screen and (max-width: 1200px){
     .deck-holder {
         grid-template-columns: 1fr 1fr 1fr 1fr;

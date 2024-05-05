@@ -2933,6 +2933,17 @@ let numberOfDefeated = 0;
 let numberOfDiscard = 0;
 let numberOfNoTriggers = 0;
 
+let numberOfOnes = 0;
+let numberOfTwos = 0;
+let numberOfThrees = 0;
+let numberOfFours = 0;
+let numberOfFives = 0;
+let numberOfSixes = 0;
+let numberOfSevens = 0;
+let numberOfEights = 0;
+let numberOfNines = 0;
+let numberOfTens = 0;
+
 function getURL() {
     url = window.location.href;
 
@@ -3052,6 +3063,37 @@ function getStats(currentCardNumber, howManyOfThisCard) {
     if (!triggerFound) {
         numberOfNoTriggers += howManyOfThisCard;
     }
+
+    if (creatureObject.power == 1) {
+        numberOfOnes += howManyOfThisCard;
+    }
+    if (creatureObject.power == 2) {
+        numberOfTwos += howManyOfThisCard;
+    }
+    if (creatureObject.power == 3) {
+        numberOfThrees += howManyOfThisCard;
+    }
+    if (creatureObject.power == 4) {
+        numberOfFours += howManyOfThisCard;
+    }
+    if (creatureObject.power == 5) {
+        numberOfFives += howManyOfThisCard;
+    }
+    if (creatureObject.power == 6) {
+        numberOfSixes += howManyOfThisCard;
+    }
+    if (creatureObject.power == 7) {
+        numberOfSevens += howManyOfThisCard;
+    }
+    if (creatureObject.power == 8) {
+        numberOfEights += howManyOfThisCard;
+    }
+    if (creatureObject.power == 9) {
+        numberOfNines += howManyOfThisCard;
+    }
+    if (creatureObject.power == 10) {
+        numberOfTens += howManyOfThisCard;
+    }
 }
 
 function displayStats() {
@@ -3096,6 +3138,50 @@ function displayStats() {
     
     let percentOfNoTriggers = ((numberOfNoTriggers/numberOfCards)*100).toFixed(0);
     $('.trigger-none').text(`None: ${numberOfNoTriggers} (${percentOfNoTriggers}%)`);
+
+    makeGraph();
+}
+
+function makeGraph() {
+    var xValues = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+    var yValues = [numberOfOnes, numberOfTwos, numberOfThrees, numberOfFours, numberOfFives, numberOfSixes, numberOfSevens, numberOfEights, numberOfNines, numberOfTens];
+    var barColors = ["#411928", "#411928","#411928","#411928","#411928", "#411928", "#411928", "#411928", "#411928", "#411928"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+        },
+        scales: {
+            yAxes: [{
+                display: true,
+                ticks: {
+                    suggestedMin: 0,
+                    beginAtZero: true,
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: "Number of Creatures",
+                }  
+            }],
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: "Power",
+                }  
+            }]
+        }
+      },
+    });
 }
 
 initialize();
