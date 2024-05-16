@@ -2930,6 +2930,7 @@ let numberOfCards = 0;
 let numberOfPlay = 0;
 let numberOfAttack = 0;
 let numberOfDefeated = 0;
+let numberOfAction = 0;
 let numberOfDiscard = 0;
 let numberOfNoTriggers = 0;
 
@@ -3055,6 +3056,10 @@ function getStats(currentCardNumber, howManyOfThisCard) {
         numberOfDefeated += howManyOfThisCard;
         triggerFound = true;
     }
+    if (creatureObject.triggers.action) {
+        numberOfAction += howManyOfThisCard;
+        triggerFound = true;
+    }
     if (creatureObject.triggers.discard) {
         numberOfDiscard += howManyOfThisCard;
         triggerFound = true;
@@ -3130,10 +3135,12 @@ function displayStats() {
     let playPercent = ((numberOfPlay/numberOfCards)*100).toFixed(0);
     let attackPercent = ((numberOfAttack/numberOfCards)*100).toFixed(0);
     let defeatedPercent = ((numberOfDefeated/numberOfCards)*100).toFixed(0);
+    let actionPercent = ((numberOfAction/numberOfCards)*100).toFixed(0);
     let discardPercent = ((numberOfDiscard/numberOfCards)*100).toFixed(0);
     $('.play-num').text("Play: " + numberOfPlay + ` (${playPercent}%)`);
     $('.attack-num').text("Attack: " + numberOfAttack + ` (${attackPercent}%)`);
     $('.defeated-num').text("Defeated: " + numberOfDefeated + ` (${defeatedPercent}%)`);
+    $('.action-num').text("Action: " + numberOfAction + ` (${actionPercent}%)`);
     $('.discard-num').text("In Discard Pile: " + numberOfDiscard + ` (${discardPercent}%)`);
     
     let percentOfNoTriggers = ((numberOfNoTriggers/numberOfCards)*100).toFixed(0);
