@@ -16,7 +16,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC3"
     },
     {
         name: "Bee Bear",
@@ -35,7 +36,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC8"
     },
     {
         name: "Brain Fly",
@@ -54,7 +56,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC11"
     },
     {
         name: "Chameleon Sniper",
@@ -73,7 +76,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC15"
     },
     {
         name: "Compost Dragon",
@@ -92,7 +96,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC14"
     },
     {
         name: "Deathweaver",
@@ -111,7 +116,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC32"
     },
     {
         name: "Elephantopus",
@@ -130,7 +136,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC5"
     },
     {
         name: "Explosive Toad",
@@ -149,7 +156,8 @@ const creatures = [
             attack: false,
             defeated: true
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC26"
     },
     {
         name: "Ferret Bomber",
@@ -168,7 +176,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC23"
     },
     {
         name: "Giraffodile",
@@ -187,7 +196,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC41"
     },
     {
         name: "Goblin Werewolf",
@@ -206,7 +216,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC43"
     },
     {
         name: "Gorillion",
@@ -224,7 +235,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC1"
     },
     {
         name: "Grave Robber",
@@ -243,7 +255,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC18"
     },
     {
         name: "Harpy Mother",
@@ -262,7 +275,8 @@ const creatures = [
             attack: false,
             defeated: true
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC2"
     },
     {
         name: "Kangasaurus Rex",
@@ -281,7 +295,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC7"
     },
     {
         name: "Killer Bee",
@@ -300,7 +315,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC13"
     },
     {
         name: "Lone Yeti",
@@ -319,7 +335,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC6"
     },
     {
         name: "Luchataur",
@@ -338,7 +355,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC36"
     },
     {
         name: "Mysterious Mermaid",
@@ -357,7 +375,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC12"
     },
     {
         name: "Plated Scorpion",
@@ -376,7 +395,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC4"
     },
     {
         name: "Rhino Turtle",
@@ -395,7 +415,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC10"
     },
     {
         name: "Shark Dog",
@@ -414,7 +435,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC38"
     },
     {
         name: "Sharky Crab-Dog-Mummypus",
@@ -433,7 +455,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC27"
     },
     {
         name: "Shield Bugs",
@@ -452,7 +475,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC30"
     },
     {
         name: "Snail Hydra",
@@ -471,7 +495,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC22"
     },
     {
         name: "Snail Thrower",
@@ -490,7 +515,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC40"
     },
     {
         name: "Spider Owl",
@@ -509,7 +535,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC9"
     },
     {
         name: "Strange Barrel",
@@ -528,7 +555,8 @@ const creatures = [
             attack: false,
             defeated: true
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC34"
     },
     {
         name: "Tiger Squirrel",
@@ -547,7 +575,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC46"
     },
     {
         name: "Turbo Bug",
@@ -566,7 +595,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC28"
     },
     {
         name: "Tusked Extorter",
@@ -585,7 +615,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC42"
     },
     {
         name: "Urchin Hurler",
@@ -604,7 +635,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact"
+        pack: "First Contact",
+        id: "FC16"
     },
     {
         name: "Bugserker",
@@ -623,7 +655,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG4"
     },
     {
         name: "Count Draculeech",
@@ -642,7 +675,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG2"
     },
     {
         name: "Creep From The Deep",
@@ -661,7 +695,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG8"
     },
     {
         name: "Ferret Pacifier",
@@ -680,7 +715,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG12"
     },
     {
         name: "Froblin Instigator",
@@ -699,7 +735,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG5"
     },
     {
         name: "Goreagle Alpha",
@@ -718,7 +755,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG9"
     },
     {
         name: "Hamster Lion",
@@ -737,7 +775,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG11"
     },
     {
         name: "Hungry Hungry Hamster",
@@ -756,7 +795,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG6"
     },
     {
         name: "Hyenix",
@@ -775,7 +815,8 @@ const creatures = [
             attack: false,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG7"
     },
     {
         name: "Majestic Manticore",
@@ -794,7 +835,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG1"
     },
     {
         name: "The Lurker",
@@ -813,7 +855,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG10"
     },
     {
         name: "Turf The Surfer",
@@ -832,7 +875,8 @@ const creatures = [
             attack: true,
             defeated: false
         },
-        pack: "First Contact: Add-On"
+        pack: "First Contact: Add-On",
+        id: "UG3"
     },
     {
         name: "Agile Rooster",
@@ -852,7 +896,8 @@ const creatures = [
             defeated: false
         },
         evolved: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE31v4"
     },
     {
         name: "Ant Zombie Horde",
@@ -873,7 +918,8 @@ const creatures = [
         },
         evolved: false,
         boost: true,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE1v4"
     },
     {
         name: "Berserker Rabbit",
@@ -894,7 +940,8 @@ const creatures = [
         },
         evolved: false,
         boost: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE19v5"
     },
     {
         name: "Blessed Killer Bee",
@@ -916,7 +963,8 @@ const creatures = [
         },
         evolved: false,
         boost: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE3v4"
     },
     {
         name: "Blessed Shield Bugs",
@@ -938,7 +986,8 @@ const creatures = [
         },
         evolved: false,
         boost: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE30v3"
     },
     {
         name: "Blessed Tiger Squirrel",
@@ -960,7 +1009,8 @@ const creatures = [
         },
         evolved: false,
         boost: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE38v2"
     },
     {
         name: "Catalisk",
@@ -982,7 +1032,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE2v2"
     },
     {
         name: "Cave Lizard",
@@ -1004,7 +1055,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE39"
     },
     {
         name: "Cursed Gorillion",
@@ -1026,7 +1078,8 @@ const creatures = [
         },
         evolved: false,
         boost: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE37"
     },
     {
         name: "Duckdra",
@@ -1048,7 +1101,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE4v5"
     },
     {
         name: "Fire Antler",
@@ -1070,7 +1124,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE22v3"
     },
     {
         name: "Ghostly Underdog",
@@ -1092,7 +1147,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE8v6"
     },
     {
         name: "Goat Dragon",
@@ -1114,7 +1170,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE20v6"
     },
     {
         name: "Hiss Holiness",
@@ -1136,7 +1193,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE17v5"
     },
     {
         name: "Hypnotic Mouse",
@@ -1158,7 +1216,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE35v2"
     },
     {
         name: "Koibra",
@@ -1180,7 +1239,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE29v3"
     },
     {
         name: "Madam Mystique",
@@ -1202,7 +1262,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE23v4"
     },
     {
         name: "Peacasus",
@@ -1224,7 +1285,8 @@ const creatures = [
         },
         evolved: false,
         boost: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE5v2"
     },
     {
         name: "Porcupine Teacher",
@@ -1246,7 +1308,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE7v8"
     },
     {
         name: "Pyro Salamancer",
@@ -1268,7 +1331,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE12v5"
     },
     {
         name: "Radioactive Pest",
@@ -1290,7 +1354,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE27v4"
     },
     {
         name: "Rockyphant",
@@ -1312,7 +1377,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE14v3"
     },
     {
         name: "Sea-Rex",
@@ -1334,7 +1400,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE26v4"
     },
     {
         name: "Soul Manipulator",
@@ -1356,7 +1423,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE10v4"
     },
     {
         name: "Spirit Cheetah",
@@ -1378,7 +1446,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE25v5"
     },
     {
         name: "Spirit Maki",
@@ -1400,7 +1469,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE24v6"
     },
     {
         name: "Squirtoise Scout",
@@ -1422,7 +1492,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE34v3"
     },
     {
         name: "Tiger Wasp",
@@ -1444,7 +1515,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE21v2"
     },
     {
         name: "Tornado Dragon",
@@ -1466,7 +1538,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE28v6"
     },
     {
         name: "Trash Diver",
@@ -1488,7 +1561,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE32v5"
     },
     {
         name: "Trash Flier",
@@ -1510,7 +1584,8 @@ const creatures = [
         evolved: false,
         boost: false,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE33v3"
     },
     {
         name: "Water Antler",
@@ -1532,7 +1607,8 @@ const creatures = [
         evolved: false,
         boost: true,
         discard: false,
-        pack: "Beyond Eternity"
+        pack: "Beyond Eternity",
+        id: "FE13v7"
     },
     {
         name: "Blastfish",
@@ -1553,7 +1629,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE27v2"
     },
     {
         name: "Bullet Train",
@@ -1574,7 +1651,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE6"
     },
     {
         name: "Cake Trickster",
@@ -1595,7 +1673,8 @@ const creatures = [
             action: true
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE24v3"
     },
     {
         name: "Captain Hippo",
@@ -1616,7 +1695,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE19v2"
     },
     {
         name: "Cheeky Chimpborg",
@@ -1637,7 +1717,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE5v2"
     },
     {
         name: "Cheery Chimpborg",
@@ -1658,7 +1739,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE8v2"
     },
     {
         name: "Chuckling Chimpborg",
@@ -1679,7 +1761,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE13v3"
     },
     {
         name: "Cloud Lady",
@@ -1702,7 +1785,8 @@ const creatures = [
         evolution: true,
         secondEvolution: "Typhoon Princess",
         thirdEvolution: "Thunder Queen",
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE28v5"
     },
     {
         name: "Typhoon Princess",
@@ -1724,7 +1808,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE29v5"
     },
     {
         name: "Thunder Queen",
@@ -1746,7 +1831,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE30v5"
     },
     {
         name: "Coach Panda",
@@ -1767,7 +1853,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE9v2"
     },
     {
         name: "Curious Tadpole",
@@ -1790,7 +1877,8 @@ const creatures = [
         evolution: true,
         secondEvolution: "Frog Prophet",
         thirdEvolution: "World Eater",
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE31"
     },
     {
         name: "Frog Prophet",
@@ -1812,7 +1900,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE32v2"
     },
     {
         name: "World Eater",
@@ -1834,7 +1923,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE33v4"
     },
     {
         name: "Dr Orange U Tan",
@@ -1855,7 +1945,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE11v3"
     },
     {
         name: "Dragon Inn",
@@ -1876,7 +1967,8 @@ const creatures = [
             action: true
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE22"
     },
     {
         name: "Earwig Assassin",
@@ -1897,7 +1989,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE3v3"
     },
     {
         name: "Infernostrich",
@@ -1918,7 +2011,8 @@ const creatures = [
             action: true
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE25v2"
     },
     {
         name: "Kitsunsei",
@@ -1939,7 +2033,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE12"
     },
     {
         name: "Mole Machine",
@@ -1960,7 +2055,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE17v3"
     },
     {
         name: "Octocopter",
@@ -1981,7 +2077,8 @@ const creatures = [
             action: true
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE26"
     },
     {
         name: "Puffermech",
@@ -2002,7 +2099,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE7v2"
     },
     {
         name: "Radioactive Rabbit",
@@ -2023,7 +2121,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE16v3"
     },
     {
         name: "Robopup",
@@ -2044,7 +2143,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE2v2"
     },
     {
         name: "Sawn",
@@ -2065,7 +2165,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE10v2"
     },
     {
         name: "Spiky Shinobi",
@@ -2086,7 +2187,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE4v2"
     },
     {
         name: "Steelhorn",
@@ -2107,7 +2209,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE18v2"
     },
     {
         name: "Sweet Fighter",
@@ -2128,7 +2231,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE21v2"
     },
     {
         name: "The Experiment",
@@ -2149,7 +2253,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE15v2"
     },
     {
         name: "Turtle Toaster",
@@ -2170,7 +2275,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE23v2"
     },
     {
         name: "Utility Bug",
@@ -2191,7 +2297,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE14v2"
     },
     {
         name: "Waddling Recruit",
@@ -2214,7 +2321,8 @@ const creatures = [
         evolution: true,
         secondEvolution: 'Veteran Penguin',
         thirdEvolution: 'Frosty Fortress',
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE34v2"
     },
     {
         name: "Veteran Penguin",
@@ -2236,7 +2344,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE35v3"
     },
     {
         name: "Frosty Fortress",
@@ -2258,7 +2367,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE36v4"
     },
     {
         name: "Westside Monster",
@@ -2279,7 +2389,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE20"
     },
     {
         name: "Wildsprout",
@@ -2302,7 +2413,8 @@ const creatures = [
         evolution: true,
         secondEvolution: 'Bigroot',
         thirdEvolution: 'Oakenmaster',
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE37v4"
     },
     {
         name: "Bigroot",
@@ -2324,7 +2436,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE38v3"
     },
     {
         name: "Oakenmaster",
@@ -2346,7 +2459,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Beyond Evolution"
+        pack: "Beyond Evolution",
+        id: "AE39v3"
     },
     {
         name: "Slugapult",
@@ -2367,7 +2481,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR01_2021"
     },
     {
         name: "Mindbug Bug",
@@ -2388,7 +2503,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR02_2021"
     },
     {
         name: "Ratomancer",
@@ -2409,7 +2525,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR03_2021"
     },
     {
         name: "Ram Hopper",
@@ -2430,7 +2547,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR04_2021"
     },
     {
         name: "Boar-Zooka",
@@ -2451,7 +2569,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR05_2021"
     },
     {
         name: "Sluggernaut",
@@ -2472,7 +2591,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR06_2021"
     },
     {
         name: "Chuck",
@@ -2493,7 +2613,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR07_2022"
     },
     {
         name: "Jazz Dog",
@@ -2514,7 +2635,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR08_2022"
     },
     {
         name: "Macaw Dagon",
@@ -2535,7 +2657,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR09_2022"
     },
     {
         name: "Unigon",
@@ -2556,7 +2679,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2022"
+        pack: "Promo 2022",
+        id: "PR10_2022"
     },
     {
         name: "Suspicious Gift",
@@ -2577,7 +2701,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP231"
     },
     {
         name: "Future Eric",
@@ -2642,7 +2767,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP234"
     },
     {
         name: "Blessed Axolotl Healer",
@@ -2664,7 +2790,8 @@ const creatures = [
             discard: true
         },
         evolution: false,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP239"
     },
     {
         name: "Cursed Goblin Werewolf",
@@ -2686,7 +2813,8 @@ const creatures = [
             discard: true
         },
         evolution: false,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2310"
     },
     {
         name: "Kitten Crewmate",
@@ -2709,7 +2837,8 @@ const creatures = [
         evolution: true,
         secondEvolution: 'One-Eye Felix',
         thirdEvolution: 'Silver Whiskers',
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2314"
     },
     {
         name: "One-Eye Felix",
@@ -2731,7 +2860,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2315"
     },
     {
         name: "Silver Whiskers",
@@ -2753,7 +2883,8 @@ const creatures = [
         },
         evolution: true,
         evolved: true,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2316"
     },
     {
         name: "Ghost Hand",
@@ -2775,7 +2906,8 @@ const creatures = [
         },
         evolution: false,
         boost: true,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP235v2"
     },
     {
         name: "Solar Bear",
@@ -2797,7 +2929,8 @@ const creatures = [
         },
         evolution: false,
         boost: true,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2311"
     },
     {
         name: "Jean-Claw_Pandamme",
@@ -2818,7 +2951,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2317"
     },
     {
         name: "Bug Catcher",
@@ -2839,7 +2973,8 @@ const creatures = [
             action: false
         },
         evolution: false,
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP236"
     },
     {
         name: "Tuckbox Mimic",
@@ -2863,7 +2998,8 @@ const creatures = [
         boost: true,
         secondEvolution: 'Deckbox Mimic',
         thirdEvolution: 'Big Box Mimic',
-        pack: "Promo 2023"
+        pack: "Promo 2023",
+        id: "PP2318"
     },
     {
         name: "Deckbox Mimic",
@@ -2915,6 +3051,7 @@ const creatures = [
 let url;
 let listOfCardNumbers;
 let listOfCardLetters = [];
+let exportString = "";
 let numberOfFirstContact = 0;
 let numberOfNewServants = 0;
 let numberOfEvolution = 0;
@@ -2952,7 +3089,6 @@ function getURL() {
     url = url.split("?");
     url = url[1];
     listOfCardNumbers = url.split("-");
-    console.log(listOfCardNumbers);
     $(listOfCardNumbers).each(function( index ) {
         let letter = this[this.length-1];
         listOfCardLetters.push(letter);
@@ -2983,6 +3119,10 @@ function placeCards() {
                 howManyOfThisCard = howManyOfThisCard.charCodeAt(0) - 96;
                 numberOfCards = numberOfCards + howManyOfThisCard;
 
+                if (this.id) {
+                    addToExportString(this.id, howManyOfThisCard);
+                }
+
                 getStats(currentCardNumber, howManyOfThisCard);
                 $(".deck-holder").append(`
                     <div class="img-holder">
@@ -2994,6 +3134,18 @@ function placeCards() {
         });
         indexOfArray++; 
     });
+}
+
+function addToExportString(id, number) {
+    for (let i = 0; i < number; i++) {
+        exportString += id + ",";
+    }
+}
+
+function finalizeExportString() {
+    if (exportString.charAt(exportString.length - 1) == ",") {
+        exportString = exportString.slice(0, -1);
+    }
 }
 
 function getStats(currentCardNumber, howManyOfThisCard) {
@@ -3191,9 +3343,15 @@ function makeGraph() {
     });
 }
 
+$(".js_save-btn").click(function() {
+    navigator.clipboard.writeText(exportString);
+})
+
 initialize();
 function initialize() {
     getURL();
     placeCards();
     displayStats();
+    finalizeExportString();
+    console.log(exportString);
 }

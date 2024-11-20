@@ -13,10 +13,33 @@ h1 {
     text-align: center;
 }
 
+button {
+    padding: 10px;
+    background-color: #411928;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #411928;
+    transition: all .35s;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #411928;
+    background-color: white;
+}
+
 .total-number-div {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
 }
 
 .deck-holder {
