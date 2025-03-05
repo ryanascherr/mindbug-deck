@@ -24,12 +24,15 @@ let numberOfFirstContact = 0;
 let numberOfNewServants = 0;
 let numberOfEvolution = 0;
 let numberOfEternity = 0;
+let numberOfKingdom = 0;
+let numberOfGalaxy = 0;
 let numberOfPromo = 0;
 let numberOfFrenzy = 0;
 let numberOfHunter = 0;
 let numberOfPoisonous = 0;
 let numberOfSneaky = 0;
 let numberOfTough = 0;
+let numberOfFast = 0;
 let numberOfNoKeywords = 0;
 let numberOfCards = 0;
 let numberOfPlay = 0;
@@ -37,6 +40,7 @@ let numberOfAttack = 0;
 let numberOfDefeated = 0;
 let numberOfAction = 0;
 let numberOfDiscard = 0;
+let numberOfHarvest = 0;
 let numberOfNoTriggers = 0;
 
 let numberOfOnes = 0;
@@ -121,6 +125,12 @@ function getStats(currentCardNumber, howManyOfThisCard) {
     if (creature.set.name == "Beyond Eternity") {
         numberOfEternity += howManyOfThisCard;
     }
+    if (creature.set.name == "Battlefruit Kingdom") {
+        numberOfKingdom += howManyOfThisCard;
+    }
+    if (creature.set.name == "Battlefruit Galaxy") {
+        numberOfGalaxy += howManyOfThisCard;
+    }
     if (creature.set.name == "Promo 2022" || creature.set.name == "Promo 2023") {
         numberOfPromo += howManyOfThisCard;
     }
@@ -161,6 +171,10 @@ function getStats(currentCardNumber, howManyOfThisCard) {
     }
     if (getCurrentKeyword(creature, "Tough")) {
         numberOfTough += howManyOfThisCard;
+        keyWordFound = true;
+    }
+    if (getCurrentKeyword(creature, "Fast")) {
+        numberOfFast += howManyOfThisCard;
         keyWordFound = true;
     }
 
@@ -204,6 +218,10 @@ function getStats(currentCardNumber, howManyOfThisCard) {
     }
     if (getCurrentTrigger(creature, "Discard")) {
         numberOfDiscard += howManyOfThisCard;
+        triggerFound = true;
+    }
+    if (getCurrentTrigger(creature, "Harvest")) {
+        numberOfHarvest += howManyOfThisCard;
         triggerFound = true;
     }
 
@@ -254,11 +272,13 @@ function displayStats() {
     let poisonousPercent = ((numberOfPoisonous/numberOfCards)*100).toFixed(0);
     let sneakyPercent = ((numberOfSneaky/numberOfCards)*100).toFixed(0);
     let toughPercent = ((numberOfTough/numberOfCards)*100).toFixed(0);
+    let fastPercent = ((numberOfFast/numberOfCards)*100).toFixed(0);
     $('.frenzy-num').text("Frenzy: " + numberOfFrenzy + ` (${frenzyPercent}%)`);
     $('.hunter-num').text("Hunter: " + numberOfHunter + ` (${hunterPercent}%)`);
     $('.poisonous-num').text("Poisonous: " + numberOfPoisonous + ` (${poisonousPercent}%)`);
     $('.sneaky-num').text("Sneaky: " + numberOfSneaky + ` (${sneakyPercent}%)`);
     $('.tough-num').text("Tough: " + numberOfTough + ` (${toughPercent}%)`);
+    $('.fast-num').text("Fast: " + numberOfFast + ` (${fastPercent}%)`);
     
     let percentOfNoKeywords = ((numberOfNoKeywords/numberOfCards)*100).toFixed(0);
     $('.keyword-none').text(`None: ${numberOfNoKeywords} (${percentOfNoKeywords}%)`);
@@ -267,11 +287,15 @@ function displayStats() {
     let newServantsPercent = ((numberOfNewServants/numberOfCards)*100).toFixed(0);
     let evolutionPercent = ((numberOfEvolution/numberOfCards)*100).toFixed(0);
     let eternityPercent = ((numberOfEternity/numberOfCards)*100).toFixed(0);
+    let kingdomPercent = ((numberOfKingdom/numberOfCards)*100).toFixed(0);
+    let galaxyPercent = ((numberOfGalaxy/numberOfCards)*100).toFixed(0);
     let promoPercent = ((numberOfPromo/numberOfCards)*100).toFixed(0);
     $('.fc-num').text("First Contact: " + numberOfFirstContact + ` (${firstContactPercent}%)`);
     $('.ns-num').text("New Servants: " + numberOfNewServants + ` (${newServantsPercent}%)`);
     $('.ev-num').text("Beyond Evolution: " + numberOfEvolution + ` (${evolutionPercent}%)`);
     $('.et-num').text("Beyond Eternity: " + numberOfEternity + ` (${eternityPercent}%)`);
+    $('.bk-num').text("Battlefruit Kingdom: " + numberOfKingdom + ` (${kingdomPercent}%)`);
+    $('.bg-num').text("Battlefruit Galaxy: " + numberOfGalaxy + ` (${galaxyPercent}%)`);
     $('.promo-num').text("Promo: " + numberOfPromo + ` (${promoPercent}%)`);
 
     let playPercent = ((numberOfPlay/numberOfCards)*100).toFixed(0);
@@ -279,11 +303,13 @@ function displayStats() {
     let defeatedPercent = ((numberOfDefeated/numberOfCards)*100).toFixed(0);
     let actionPercent = ((numberOfAction/numberOfCards)*100).toFixed(0);
     let discardPercent = ((numberOfDiscard/numberOfCards)*100).toFixed(0);
+    let harvestPercent = ((numberOfHarvest/numberOfCards)*100).toFixed(0);
     $('.play-num').text("Play: " + numberOfPlay + ` (${playPercent}%)`);
     $('.attack-num').text("Attack: " + numberOfAttack + ` (${attackPercent}%)`);
     $('.defeated-num').text("Defeated: " + numberOfDefeated + ` (${defeatedPercent}%)`);
     $('.action-num').text("Action: " + numberOfAction + ` (${actionPercent}%)`);
     $('.discard-num').text("In Discard Pile: " + numberOfDiscard + ` (${discardPercent}%)`);
+    $('.harvest-num').text("Harvest: " + numberOfHarvest + ` (${harvestPercent}%)`);
     
     let percentOfNoTriggers = ((numberOfNoTriggers/numberOfCards)*100).toFixed(0);
     $('.trigger-none').text(`None: ${numberOfNoTriggers} (${percentOfNoTriggers}%)`);
