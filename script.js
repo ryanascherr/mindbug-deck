@@ -26,6 +26,7 @@ let numberOfEvolution = 0;
 let numberOfEternity = 0;
 let numberOfKingdom = 0;
 let numberOfGalaxy = 0;
+let numberOfTagTeam = 0;
 let numberOfPromo = 0;
 let numberOfFrenzy = 0;
 let numberOfHunter = 0;
@@ -131,7 +132,10 @@ function getStats(currentCardNumber, howManyOfThisCard) {
     if (creature.set.name == "Battlefruit Galaxy") {
         numberOfGalaxy += howManyOfThisCard;
     }
-    if (creature.set.name == "Promo 2022" || creature.set.name == "Promo 2023") {
+    if (creature.set.name == "Tag Team") {
+        numberOfTagTeam += howManyOfThisCard;
+    }
+    if (creature.set.name == "Promo 2022" || creature.set.name == "Promo 2023" || creature.set.name == "Battlefruit Add-On" || creature.set.name == "Promo 2024") {
         numberOfPromo += howManyOfThisCard;
     }
 
@@ -289,6 +293,7 @@ function displayStats() {
     let eternityPercent = ((numberOfEternity/numberOfCards)*100).toFixed(0);
     let kingdomPercent = ((numberOfKingdom/numberOfCards)*100).toFixed(0);
     let galaxyPercent = ((numberOfGalaxy/numberOfCards)*100).toFixed(0);
+    let tagTeamPercent = ((numberOfTagTeam/numberOfCards)*100).toFixed(0);
     let promoPercent = ((numberOfPromo/numberOfCards)*100).toFixed(0);
     $('.fc-num').text("First Contact: " + numberOfFirstContact + ` (${firstContactPercent}%)`);
     $('.ns-num').text("New Servants: " + numberOfNewServants + ` (${newServantsPercent}%)`);
@@ -296,7 +301,8 @@ function displayStats() {
     $('.et-num').text("Beyond Eternity: " + numberOfEternity + ` (${eternityPercent}%)`);
     $('.bk-num').text("Battlefruit Kingdom: " + numberOfKingdom + ` (${kingdomPercent}%)`);
     $('.bg-num').text("Battlefruit Galaxy: " + numberOfGalaxy + ` (${galaxyPercent}%)`);
-    $('.promo-num').text("Promo: " + numberOfPromo + ` (${promoPercent}%)`);
+    $('.tt-num').text("Tag Team: " + numberOfTagTeam + ` (${tagTeamPercent}%)`);
+    $('.promo-num').text("Promo/Add-On: " + numberOfPromo + ` (${promoPercent}%)`);
 
     let playPercent = ((numberOfPlay/numberOfCards)*100).toFixed(0);
     let attackPercent = ((numberOfAttack/numberOfCards)*100).toFixed(0);
